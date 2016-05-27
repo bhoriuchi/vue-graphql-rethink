@@ -1,2 +1,2 @@
 export const GRAPHQL = 'GRAPHQL'
-export const SET_SOCKET = 'SET_SOCKET'
+export const SET_SERVER_DATA = 'SET_SERVER_DATA'

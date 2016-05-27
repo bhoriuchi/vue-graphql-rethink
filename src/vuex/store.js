@@ -7,7 +7,9 @@ import graphql from './modules/graphql'
 
 Vue.use(Vuex)
 
-const state = {}
+const state = {
+  serverData: {}
+}
 
 export default new Vuex.Store({
   modules: {

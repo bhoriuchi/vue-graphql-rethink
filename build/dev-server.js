@@ -1,6 +1,7 @@
 var path = require('path')
 var express = require('express')
 var webpack = require('webpack')
+var lib = require('../lib')
 var config = require('../config')
 var proxyMiddleware = require('http-proxy-middleware')
 var webpackConfig = process.env.NODE_ENV === 'testing'
@@ -16,14 +17,10 @@ var proxyTable = config.dev.proxyTable
 var app = express()
 var compiler = webpack(webpackConfig)
 var server = require('http').Server(app)
-var io = require('socket.io')(server)
 
-// TODO: move the socket.io connection callback to its own module
-io.on('connection', function (socket) {
-  socket.on('graphql', function (query) {
-    console.log(query)
-  })
-})
+// Bind socket.io to the server and set up the listeners
+var io = require('socket.io')(server)
+lib.server.sockets(io)
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
   publicPath: webpackConfig.output.publicPath,
