@@ -1,6 +1,7 @@
 <template>
     <div class="container">
       <a v-link="{path: '/'}">HelloWorld</a>
+
       <div>Enter GraphQL</div>
       <p>
         <input type="text" class="mono form-control" v-model="schema" placeholder="schema name">
@@ -9,10 +10,16 @@
         <textarea rows="20" cols="50" v-model="query" class="mono form-control" placeholder="GraphQL Query"></textarea>
       </p>
       <p>
+        Test Queries:
+        <a href="#" @click.prevent="createUserMutation">Create User</a> |
+        <a href="#" @click.prevent="getAllUsersQuery">List Users</a> |
+        <a href="#" @click.prevent="deleteUserMutation">Delete User</a>
+      </p>
+      <p>
         <button class="btn btn-primary" @click="graph">Test</button>
       </p>
       <p>
-        <code>{{ serverData | json }}</code>
+        <pre>{{ serverData | json }}</pre>
       </p>
     </div>
 </template>
@@ -38,10 +45,39 @@
     data () {
       return {
         schema: 'users',
-        query: '{ users { id } }'
+        query: ''
       }
     },
     methods: {
+      getAllUsersQuery () {
+        this.schema = 'users'
+        this.query = `{
+  users {
+    id,
+    firstName,
+    lastName,
+    email
+  }
+}`
+      },
+      createUserMutation () {
+        this.schema = 'users'
+        this.query = `mutation Mutation {
+  createUser(
+    firstName: "John",
+    lastName: "Doe",
+    email: "j@does.com"
+  ) { id, firstName, lastName, email }
+}`
+      },
+      deleteUserMutation () {
+        this.schema = 'users'
+        this.query = `mutation Mutation {
+  deleteUser(id: "1234") {
+    status
+  }
+}`
+      },
       graph () {
         this.graphql(this.$socket, this.schema, this.query)
       }
