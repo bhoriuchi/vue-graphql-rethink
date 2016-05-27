@@ -1,3 +1,2 @@
-/**
- * Created by bhoriuchi on 5/26/16.
- */
+export const GRAPHQL = 'GRAPHQL'
+export const SET_SOCKET = 'SET_SOCKET'

@@ -5,15 +5,17 @@
 </template>
 
 <script>
-export default {
-  sockets: {
-    connect () {
-      console.log('connected')
+  import store from './vuex/store'
+  export default {
+    store,
+    sockets: {
+      connect () {
+        console.log('connected to socket.io')
+      }
+    },
+    components: {
     }
-  },
-  components: {
   }
-}
 </script>
 
 <style>

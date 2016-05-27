@@ -18,9 +18,8 @@ var compiler = webpack(webpackConfig)
 var server = require('http').Server(app)
 var io = require('socket.io')(server)
 
-// SOCKET IO
+// TODO: move the socket.io connection callback to its own module
 io.on('connection', function (socket) {
-  console.log('Connection Made')
   socket.on('graphql', function (query) {
     console.log(query)
   })

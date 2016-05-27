@@ -19,16 +19,20 @@
 
 </style>
 <script>
-    export default{
-      data () {
-        return {
-          query: ''
-        }
-      },
-      methods: {
-        graph () {
-          this.$socket.emit('graphql', this.query)
-        }
+  import { graphql } from '../vuex/actions'
+  export default {
+    vuex: {
+      actions: { graphql }
+    },
+    data () {
+      return {
+        query: ''
+      }
+    },
+    methods: {
+      graph () {
+        this.graphql(this.$socket, this.query)
       }
     }
+  }
 </script>

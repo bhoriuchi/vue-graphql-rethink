@@ -15,16 +15,21 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Forms from './components/Forms'
 import Hello from './components/Hello'
 
+// config
+import Config from '../config/custom'
+
 Vue.config.debug = true
 Vue.use(VueRouter)
-Vue.use(VueSocketio, 'http://localhost:8080')
+Vue.use(VueSocketio, Config.socket.server)
 
 let router = new VueRouter()
 sync(store, router)
 
-store.watch(function (oldVal, newVal) {
-  console.log(oldVal, newVal)
+/*
+store.watch(function (val) {
+  console.log(val)
 })
+*/
 
 router.map({
   '/': {
