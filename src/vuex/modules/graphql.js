@@ -1,4 +1,4 @@
-import { GRAPHQL, SET_SERVER_DATA } from '../mutation-types'
+import { GRAPHQL } from '../mutation-types'
 
 const state = {}
 
@@ -8,9 +8,6 @@ const mutations = {
       storeState.serverData = result
     })
     socket.emit('graphql', { schema, query })
-  },
-  [SET_SERVER_DATA] (state, store, data) {
-    store.state.serverData = data
   }
 }
 
