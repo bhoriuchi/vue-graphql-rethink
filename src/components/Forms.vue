@@ -13,7 +13,10 @@
         Test Queries:
         <a href="#" @click.prevent="createUserMutation">Create User</a> |
         <a href="#" @click.prevent="getAllUsersQuery">List Users</a> |
-        <a href="#" @click.prevent="deleteUserMutation">Delete User</a>
+        <a href="#" @click.prevent="deleteUserMutation">Delete User</a> |
+        <a href="#" @click.prevent="purgeTableMutation">Purge Table</a> |
+        <a href="#" @click.prevent="branchUserMutation">Branch</a> |
+        <a href="#" @click.prevent="forkUserMutation">Fork</a>
       </p>
       <p>
         <button class="btn btn-primary" @click="graph">Test</button>
@@ -49,10 +52,17 @@
       }
     },
     methods: {
+      purgeTableMutation () {
+        this.schema = 'users'
+        this.query = `mutation Mutation {
+  purge { status }
+}`
+      },
       getAllUsersQuery () {
         this.schema = 'users'
         this.query = `{
   users {
+    _metadata { recordId, version, validFrom, validTo },
     id,
     firstName,
     lastName,
@@ -63,18 +73,46 @@
       createUserMutation () {
         this.schema = 'users'
         this.query = `mutation Mutation {
-  createUser(
+  create(
     firstName: "John",
     lastName: "Doe",
     email: "j@does.com"
-  ) { id, firstName, lastName, email }
+  )
+  {
+    _metadata { recordId, version, validFrom, validTo },
+    id, firstName, lastName, email
+  }
 }`
       },
       deleteUserMutation () {
         this.schema = 'users'
         this.query = `mutation Mutation {
-  deleteUser(id: "1234") {
+  delete(id: "1234") {
     status
+  }
+}`
+      },
+      branchUserMutation () {
+        this.schema = 'users'
+        this.query = `mutation Mutation {
+  branch(
+    id: ""
+  )
+  {
+    _metadata { recordId, version, validFrom, validTo },
+    id, firstName, lastName, email
+  }
+}`
+      },
+      forkUserMutation () {
+        this.schema = 'users'
+        this.query = `mutation Mutation {
+  fork(
+    id: ""
+  )
+  {
+    _metadata { recordId, version, validFrom, validTo },
+    id, firstName, lastName, email
   }
 }`
       },
