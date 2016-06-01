@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd189fb8-7c5f-457c-938b-fa3c84a422b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/graphql/types/_version.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/server/utils.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/graphql/types/status.js" afterPath="$PROJECT_DIR$/lib/graphql/types/_status.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/graphql/schemas/users.js" afterPath="$PROJECT_DIR$/lib/graphql/schemas/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/graphql/types/index.js" afterPath="$PROJECT_DIR$/lib/graphql/types/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/graphql/types/user.js" afterPath="$PROJECT_DIR$/lib/graphql/types/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/server/index.js" afterPath="$PROJECT_DIR$/lib/server/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/server/sockets.js" afterPath="$PROJECT_DIR$/lib/server/sockets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Forms.vue" afterPath="$PROJECT_DIR$/src/components/Forms.vue" />
     </list>
     <ignored path="vue-graphql-rethink.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,22 +24,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="users.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/graphql/schemas/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#131#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utils.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="utils.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/server/utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="225">
               <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
               <folding />
             </state>
@@ -112,9 +102,9 @@
         <option value="$PROJECT_DIR$/lib/server/index.js" />
         <option value="$PROJECT_DIR$/lib/server/sockets.js" />
         <option value="$PROJECT_DIR$/lib/graphql/types/_version.js" />
-        <option value="$PROJECT_DIR$/lib/graphql/schemas/users.js" />
         <option value="$PROJECT_DIR$/src/components/Forms.vue" />
         <option value="$PROJECT_DIR$/lib/server/utils.js" />
+        <option value="$PROJECT_DIR$/lib/graphql/schemas/users.js" />
       </list>
     </option>
   </component>
@@ -483,7 +473,7 @@
       <updated>1464324377978</updated>
       <workItem from="1464324379688" duration="101000" />
       <workItem from="1464324529275" duration="33027000" />
-      <workItem from="1464704667523" duration="18616000" />
+      <workItem from="1464704667523" duration="19043000" />
     </task>
     <task id="LOCAL-00001" summary="* initial commit">
       <created>1464333964254</created>
@@ -527,17 +517,24 @@
       <option name="project" value="LOCAL" />
       <updated>1464705938686</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="* adding versioning fields to user&#10;* adding branch and fork mutations to user">
+      <created>1464818884166</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1464818884166</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51744000" />
+    <option name="totallyTimeSpent" value="52171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="32" width="1843" height="1004" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21703744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21703744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32834226" sideWeight="0.5089528" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -573,7 +570,8 @@
     <MESSAGE value="* fixing graph/rethink query - not fixed" />
     <MESSAGE value="* fixed user type&#10;* fixed reql query for user using rethinkdash way" />
     <MESSAGE value="* moved async code to action from mutation" />
-    <option name="LAST_COMMIT_MESSAGE" value="* moved async code to action from mutation" />
+    <MESSAGE value="* adding versioning fields to user&#10;* adding branch and fork mutations to user" />
+    <option name="LAST_COMMIT_MESSAGE" value="* adding versioning fields to user&#10;* adding branch and fork mutations to user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -584,9 +582,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#131#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -897,16 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/graphql/schemas/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Forms.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -917,8 +903,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/server/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="225">
           <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/graphql/schemas/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding />
         </state>
       </provider>
