@@ -16,7 +16,8 @@
         <a href="#" @click.prevent="deleteUserMutation">Delete User</a> |
         <a href="#" @click.prevent="purgeTableMutation">Purge Table</a> |
         <a href="#" @click.prevent="branchUserMutation">Branch</a> |
-        <a href="#" @click.prevent="forkUserMutation">Fork</a>
+        <a href="#" @click.prevent="forkUserMutation">Fork</a> |
+        <a href="#" @click.prevent="publishUserMutation">Publish</a>
       </p>
       <p>
         <button class="btn btn-primary" @click="graph">Test</button>
@@ -62,7 +63,7 @@
         this.schema = 'users'
         this.query = `{
   users {
-    _metadata { recordId, version, validFrom, validTo },
+    _metadata { recordId, version, validFrom, validTo, changeLog { date, type, user, message } },
     id,
     firstName,
     lastName,
@@ -76,10 +77,14 @@
   create(
     firstName: "John",
     lastName: "Doe",
-    email: "j@does.com"
+    email: "j@does.com",
+    changeLog: {
+      user: "jdoe",
+      message: "Created Record"
+    }
   )
   {
-    _metadata { recordId, version, validFrom, validTo },
+    _metadata { recordId, version, validFrom, validTo, changeLog { date, type, user, message } },
     id, firstName, lastName, email
   }
 }`
@@ -109,6 +114,19 @@
         this.query = `mutation Mutation {
   fork(
     id: ""
+  )
+  {
+    _metadata { recordId, version, validFrom, validTo },
+    id, firstName, lastName, email
+  }
+}`
+      },
+      publishUserMutation () {
+        this.schema = 'users'
+        this.query = `mutation Mutation {
+  publish(
+    id: "",
+    version: "0.1.0"
   )
   {
     _metadata { recordId, version, validFrom, validTo },
