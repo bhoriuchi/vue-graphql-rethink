@@ -56,14 +56,25 @@
       purgeTableMutation () {
         this.schema = 'users'
         this.query = `mutation Mutation {
-  purge { status }
+  purge
 }`
       },
       getAllUsersQuery () {
         this.schema = 'users'
         this.query = `{
   users {
-    _metadata { recordId, version, validFrom, validTo, changeLog { date, type, user, message } },
+    _metadata {
+      recordId,
+      version,
+      validFrom,
+      validTo,
+      changeLog {
+        date,
+        type,
+        user,
+        message
+      }
+    },
     id,
     firstName,
     lastName,
@@ -84,17 +95,29 @@
     }
   )
   {
-    _metadata { recordId, version, validFrom, validTo, changeLog { date, type, user, message } },
-    id, firstName, lastName, email
+    _metadata {
+      recordId,
+      version,
+      validFrom,
+      validTo,
+      changeLog {
+        date,
+        type,
+        user,
+        message
+      }
+    },
+    id,
+    firstName,
+    lastName,
+    email
   }
 }`
       },
       deleteUserMutation () {
         this.schema = 'users'
         this.query = `mutation Mutation {
-  delete(id: "1234") {
-    status
-  }
+  delete(id: "1234")
 }`
       },
       branchUserMutation () {
@@ -104,8 +127,22 @@
     id: ""
   )
   {
-    _metadata { recordId, version, validFrom, validTo },
-    id, firstName, lastName, email
+    _metadata {
+      recordId,
+      version,
+      validFrom,
+      validTo,
+      changeLog {
+        date,
+        type,
+        user,
+        message
+      }
+    },
+    id,
+    firstName,
+    lastName,
+    email
   }
 }`
       },
@@ -116,8 +153,22 @@
     id: ""
   )
   {
-    _metadata { recordId, version, validFrom, validTo },
-    id, firstName, lastName, email
+    _metadata {
+      recordId,
+      version,
+      validFrom,
+      validTo,
+      changeLog {
+        date,
+        type,
+        user,
+        message
+      }
+    },
+    id,
+    firstName,
+    lastName,
+    email
   }
 }`
       },
@@ -129,8 +180,22 @@
     version: "0.1.0"
   )
   {
-    _metadata { recordId, version, validFrom, validTo },
-    id, firstName, lastName, email
+    _metadata {
+      recordId,
+      version,
+      validFrom,
+      validTo,
+      changeLog {
+        date,
+        type,
+        user,
+        message
+      }
+    },
+    id,
+    firstName,
+    lastName,
+    email
   }
 }`
       },
