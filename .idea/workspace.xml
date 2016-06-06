@@ -2,33 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd189fb8-7c5f-457c-938b-fa3c84a422b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/graphql/partials/MutationFieldsVersion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/graphql/partials/MutationVersionArgs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/graphql/partials/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/graphql/resolves/CreateUser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/graphql/resolves/DeleteRecord.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/graphql/resolves/GetRecords.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/graphql/resolves/PurgeRecords.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/graphql/resolves/index.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/graphql/enums/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/graphql/inputs/index.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/graphql/enums/changelogTypesEnum.js" afterPath="$PROJECT_DIR$/lib/graphql/types/EnumChangeLogType.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/graphql/enums/statusCodesEnum.js" afterPath="$PROJECT_DIR$/lib/graphql/types/EnumStatusCode.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/graphql/inputs/changelog.js" afterPath="$PROJECT_DIR$/lib/graphql/types/InputChangeLog.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/graphql/types/_changelog.js" afterPath="$PROJECT_DIR$/lib/graphql/types/ChangeLog.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/graphql/types/_status.js" afterPath="$PROJECT_DIR$/lib/graphql/types/Status.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/graphql/types/_version.js" afterPath="$PROJECT_DIR$/lib/graphql/types/VersionMetadata.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/db/main.js" afterPath="$PROJECT_DIR$/lib/db/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/graphql/index.js" afterPath="$PROJECT_DIR$/lib/graphql/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/graphql/schemas/Users.js" afterPath="$PROJECT_DIR$/lib/graphql/schemas/Users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/graphql/schemas/index.js" afterPath="$PROJECT_DIR$/lib/graphql/schemas/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/graphql/types/index.js" afterPath="$PROJECT_DIR$/lib/graphql/types/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/graphql/types/user.js" afterPath="$PROJECT_DIR$/lib/graphql/types/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/graphql/utils/index.js" afterPath="$PROJECT_DIR$/lib/graphql/utils/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/server/sockets.js" afterPath="$PROJECT_DIR$/lib/server/sockets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Forms.vue" afterPath="$PROJECT_DIR$/src/components/Forms.vue" />
     </list>
     <ignored path="vue-graphql-rethink.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Users.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Users.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/graphql/schemas/Users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            <state relative-caret-position="750">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -91,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateUser.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/graphql/resolves/CreateUser.js">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/db/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="330">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -103,14 +80,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/db/main.js">
+      <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/graphql/types/User.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/graphql/types/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,18 +129,6 @@
               <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/graphql/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -211,7 +184,6 @@
         <option value="$PROJECT_DIR$/lib/graphql/types/Status.js" />
         <option value="$PROJECT_DIR$/lib/graphql/types/user.js" />
         <option value="$PROJECT_DIR$/lib/graphql/types/InputChangeLog.js" />
-        <option value="$PROJECT_DIR$/lib/graphql/types/index.js" />
         <option value="$PROJECT_DIR$/lib/graphql/schemas/index.js" />
         <option value="$PROJECT_DIR$/lib/graphql/partials/index.js" />
         <option value="$PROJECT_DIR$/lib/graphql/partials/MutationVersionArgs.js" />
@@ -222,12 +194,13 @@
         <option value="$PROJECT_DIR$/lib/graphql/resolves/CreateUser.js" />
         <option value="$PROJECT_DIR$/lib/graphql/resolves/DeleteRecord.js" />
         <option value="$PROJECT_DIR$/lib/graphql/resolves/PurgeRecords.js" />
-        <option value="$PROJECT_DIR$/lib/graphql/schemas/Users.js" />
         <option value="$PROJECT_DIR$/lib/graphql/utils/index.js" />
         <option value="$PROJECT_DIR$/lib/graphql/partials/MutationFieldsVersion.js" />
         <option value="$PROJECT_DIR$/lib/graphql/resolves/index.js" />
         <option value="$PROJECT_DIR$/src/components/Forms.vue" />
+        <option value="$PROJECT_DIR$/lib/graphql/types/index.js" />
         <option value="$PROJECT_DIR$/lib/db/main.js" />
+        <option value="$PROJECT_DIR$/lib/graphql/schemas/Users.js" />
       </list>
     </option>
   </component>
@@ -635,7 +608,7 @@
       <workItem from="1464704667523" duration="19294000" />
       <workItem from="1464877243114" duration="18696000" />
       <workItem from="1464964099091" duration="22281000" />
-      <workItem from="1465243606208" duration="6201000" />
+      <workItem from="1465243606208" duration="6680000" />
     </task>
     <task id="LOCAL-00001" summary="* initial commit">
       <created>1464333964254</created>
@@ -693,11 +666,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464819321043</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="* updating graphql to use graphql-factory">
+      <created>1465252968351</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1465252968351</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99600000" />
+    <option name="totallyTimeSpent" value="100079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="174" y="28" width="1650" height="987" extended-state="0" />
@@ -741,7 +721,8 @@
     <MESSAGE value="* moved async code to action from mutation" />
     <MESSAGE value="* adding versioning fields to user&#10;* adding branch and fork mutations to user" />
     <MESSAGE value="* updating user create mutation to use the createRecord function" />
-    <option name="LAST_COMMIT_MESSAGE" value="* updating user create mutation to use the createRecord function" />
+    <MESSAGE value="* updating graphql to use graphql-factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="* updating graphql to use graphql-factory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -963,29 +944,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/graphql/types/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/graphql/types/InputChangeLog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/graphql/types/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1087,16 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/graphql/schemas/Users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/graphql/resolves/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1115,10 +1068,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/graphql/types/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/graphql/types/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/db/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/graphql/schemas/Users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
