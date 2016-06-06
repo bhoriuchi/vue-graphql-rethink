@@ -48,19 +48,19 @@
     },
     data () {
       return {
-        schema: 'users',
+        schema: 'Users',
         query: ''
       }
     },
     methods: {
       purgeTableMutation () {
-        this.schema = 'users'
+        this.schema = 'Users'
         this.query = `mutation Mutation {
   purge
 }`
       },
       getAllUsersQuery () {
-        this.schema = 'users'
+        this.schema = 'Users'
         this.query = `{
   users {
     _metadata {
@@ -83,7 +83,7 @@
 }`
       },
       createUserMutation () {
-        this.schema = 'users'
+        this.schema = 'Users'
         this.query = `mutation Mutation {
   create(
     firstName: "John",
@@ -115,13 +115,13 @@
 }`
       },
       deleteUserMutation () {
-        this.schema = 'users'
+        this.schema = 'Users'
         this.query = `mutation Mutation {
   delete(id: "1234")
 }`
       },
       branchUserMutation () {
-        this.schema = 'users'
+        this.schema = 'Users'
         this.query = `mutation Mutation {
   branch(
     id: ""
@@ -147,7 +147,7 @@
 }`
       },
       forkUserMutation () {
-        this.schema = 'users'
+        this.schema = 'Users'
         this.query = `mutation Mutation {
   fork(
     id: ""
@@ -173,7 +173,7 @@
 }`
       },
       publishUserMutation () {
-        this.schema = 'users'
+        this.schema = 'Users'
         this.query = `mutation Mutation {
   publish(
     id: "",
