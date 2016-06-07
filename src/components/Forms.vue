@@ -68,6 +68,7 @@
       version,
       validFrom,
       validTo,
+      useCurrent,
       changeLog {
         date,
         type,

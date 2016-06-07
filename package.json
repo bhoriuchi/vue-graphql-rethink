@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "graphql": "^0.6.0",
-    "graphql-custom-datetype": "^0.2.1",
+    "graphql-custom-datetype": "^0.3.0",
     "graphql-factory": "^0.1.0",
     "lodash": "^4.13.1",
     "bluebird": "^3.4.0",
