@@ -49,7 +49,7 @@
     data () {
       return {
         schema: 'Users',
-        query: ''
+        query: '{ useCurrent { id, type } }'
       }
     },
     methods: {
@@ -90,6 +90,7 @@
     firstName: "John",
     lastName: "Doe",
     email: "j@does.com",
+    useCurrent: false,
     changeLog: {
       user: "jdoe",
       message: "Created Record"
@@ -101,6 +102,7 @@
       version,
       validFrom,
       validTo,
+      useCurrent,
       changeLog {
         date,
         type,
@@ -133,6 +135,7 @@
       version,
       validFrom,
       validTo,
+      useCurrent,
       changeLog {
         date,
         type,
@@ -159,6 +162,7 @@
       version,
       validFrom,
       validTo,
+      useCurrent,
       changeLog {
         date,
         type,
@@ -186,6 +190,7 @@
       version,
       validFrom,
       validTo,
+      useCurrent,
       changeLog {
         date,
         type,
