@@ -33,10 +33,13 @@ store.watch(function (val) {
 
 router.map({
   '/': {
-    component: Hello
+    component: Forms
   },
   '/forms': {
     component: Forms
+  },
+  '/hello': {
+    component: Hello
   }
 })
 

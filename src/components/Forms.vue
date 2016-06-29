@@ -1,10 +1,14 @@
 <template>
     <div class="container">
-      <a v-link="{path: '/'}">HelloWorld</a>
-
-      <div>Enter GraphQL</div>
+      <ol class="breadcrumb">
+        <li><a v-link="{path: '/hello'}">HelloWorld</a></li>
+      </ol>
+      <label>
+        Enter GraphQL
+        <input type="text" class="mono form-control" v-model="schema" placeholder="schema name" style="width:100%">
+      </label>
       <p>
-        <input type="text" class="mono form-control" v-model="schema" placeholder="schema name">
+
       </p>
       <p>
         <textarea rows="20" cols="50" v-model="query" class="mono form-control" placeholder="GraphQL Query"></textarea>
@@ -37,7 +41,7 @@
     }
 
 </style>
-<script>
+<script type="text/babel">
   import { graphql } from '../vuex/actions'
   export default {
     vuex: {
